@@ -1,0 +1,23 @@
+### Base variables
+
+@url = http://localhost:8080/api/posts
+
+
+### Cargar los posts de un usuario en la base de datos
+
+POST {{url}}/sync?userId=1 HTTP/1.1
+
+
+### Ver todos los posts
+
+GET {{url}} HTTP/1.1
+
+
+### Ver todos los posts de un usuario
+
+GET {{url}}?userId=1 HTTP/1.1
+
+
+### Ver la sugerencia para esa comida
+
+GET {{url}}?titleContains=sunt HTTP/1.1
